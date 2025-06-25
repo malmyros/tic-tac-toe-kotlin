@@ -50,8 +50,8 @@ class Game {
         if (cell is Cell.Empty) {
 
             board.set(index = cellNumber, element = Cell.Filled(player = player))
-            generateComputerMove()
             checkBoard()
+            generateComputerMove()
             printBoard()
 
         } else {
